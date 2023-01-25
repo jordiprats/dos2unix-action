@@ -1,0 +1,14 @@
+name: 'Test environment for MySQL'
+description: 'Perform a set of predefinet tests using a MySQL database'
+author: 'Jordi Prats'
+branding:
+  icon: 'database'
+  color: 'blue'
+inputs:
+  pattern:
+    description: 'Files to convert to unix format'
+    required: false
+    default: '*.md'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
